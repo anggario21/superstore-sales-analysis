@@ -27,10 +27,7 @@ This project analyzes retail sales data from the Superstore dataset to identify 
 - Regional performance varies significantly across markets
 
 ## 📸 Dashboard Preview
-(Add your Power BI screenshot here)
-
-## ⚠️ Project Status
-This project is currently in progress. Additional improvements to dashboard design and insights are ongoing.
+![Dashboard Preview](<Retail sales analysis dashboard.png>)
 
 ## 💡 Conclusion
 This project demonstrates end-to-end data analysis skills, including data cleaning, aggregation, and business insight generation using SQL and Power BI.
