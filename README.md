@@ -1,33 +1,46 @@
 # Superstore Sales Analysis
-End-to-end retail sales analysis using SQL and Power BI to identify revenue trends, profitability, and key business insights.
 
-## 📌 Overview
-This project analyzes retail sales data from the Superstore dataset to identify key business insights related to revenue, profitability, and customer behavior. The analysis was performed using SQL for data preparation and Power BI for visualization.
+## Business Problem
+The Superstore has profitability issues that aren't visible from revenue alone.
+This analysis answers three core questions:
+1. Which product categories and subcategories are destroying profit margin?
+2. Is the discount strategy helping or hurting the business?
+3. Which regions and markets should be prioritized for growth?
 
-## 📊 Dataset
+## Key Findings
+- The **Furniture** category generates 32.5% of revenue but only 19.5% of total profit
+- **Tables** subcategory has a negative profit margin of -8.47% and -$64K total loss, the single biggest drag on profitability
+- **Paper** has the highest profit margin at 24.23% but low sales volume ($244K). 
+  **Phones** and **Copiers** offer the best combination of high revenue and 
+  healthy margins ($1.7M at 12.7% and $1.5M at 17.1% respectively)
+- Discounts above **20%** are consistently associated with negative profit across all categories, 
+  with orders at 40%+ discount averaging **-$89.83 profit per order** (-75.8% margin)
+- **APAC** leads in sales ($3.85M total) but **Canada** has the highest profit margin per order at 26.62%
+  
+## Business Recommendations
+1. Re-evaluate pricing or discontinue the bottom 10 SKUs in the Tables subcategory
+2. Cap discounts at 20%, anything higher erodes margin without proportional volume gain
+3. Prioritize growth in Canada market and double down on Copiers and Phones.
+   high revenue subcategories with strong margins. Avoid over-discounting in 
+   these categories as it disproportionately destroys value.
+
+## Tools
+- PostgreSQL — data cleaning and analysis
+- Power BI — dashboard and visualization
+
+## Dataset
 - ~50,000 retail transactions
-- Includes sales, profit, discount, product, and regional data
-- Covers multiple markets and product categories
+- Covers sales, profit, discount, product category, region, and market data
 
-## 🛠 Tools Used
-- SQL (PostgreSQL) – data cleaning and analysis
-- Power BI – dashboard and visualization
-- Excel – initial data exploration
-
-## 🔍 Key Analysis
-- Sales performance by category and region
-- Profitability analysis across products
-- Discount impact on profit
-- Time-based sales trends
-
-## 📈 Key Insights
-- Technology category generates the highest revenue
-- High discount levels are associated with lower profitability
-- Some products consistently generate negative profit
-- Regional performance varies significantly across markets
-
-## 📸 Dashboard Preview
+## Dashboard Preview
 ![Dashboard Preview](<Retail sales analysis dashboard.png>)
 
-## 💡 Conclusion
-This project demonstrates end-to-end data analysis skills, including data cleaning, aggregation, and business insight generation using SQL and Power BI.
+*Full interactive dashboard available on request.*
+
+## SQL Files
+| File | Description |
+|---|---|
+| superstore-data-cleaning.sql | Handling nulls, duplicates, type casting |
+| superstore-exploratory-analysis.sql | Initial dataset profiling |
+| superstore-business-analysis.sql | Core business questions |
+| superstore-insights.sql | Advanced analysis with window functions |
